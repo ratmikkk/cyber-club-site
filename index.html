@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER ARENA - Компьютерный клуб</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">CYBER<span class="accent">ARENA</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#features">Преимущества</a></li>
+                <li><a href="#pricing">Тарифы</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="cta-button nav-cta">Забронировать</button>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">ПОГРУЗИСЬ</span>
+                    <br>В МИР ИГР
+                </h1>
+                <p class="hero-subtitle">
+                    Мощнейшее оборудование • Профессиональная атмосфера • Киберспортивные турниры
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">Забронировать место</a>
+                    <a href="#features" class="cta-button secondary">Узнать больше</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Компьютеров</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">144Hz</div>
+                        <div class="stat-label">Мониторы</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Работаем</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <p class="section-subtitle">Современное оборудование и комфортные условия для настоящих геймеров</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Мощное железо</h3>
+                    <p>RTX 4070, Intel Core i7, 32GB RAM - максимальная производительность в любой игре</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>Игровые мониторы</h3>
+                    <p>27" 144Hz IPS дисплеи с минимальным откликом для идеального гейминга</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎧</div>
+                    <h3>Профессиональная периферия</h3>
+                    <p>Механические клавиатуры, игровые мыши и качественные гарнитуры</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Киберспортивные турниры</h3>
+                    <p>Регулярные соревнования с призовым фондом для игроков любого уровня</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍕</div>
+                    <h3>Комфортная зона</h3>
+                    <p>Кафе, бар, зона отдыха - всё для комфортного времяпрепровождения</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Безопасность</h3>
+                    <p>Камеры наблюдения, индивидуальные шкафчики, охрана 24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Выбери свой тариф</h2>
+            <p class="section-subtitle">Гибкие цены для любого бюджета</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card basic">
+                    <div class="pricing-header">
+                        <h3>Базовый</h3>
+                        <div class="price">
+                            <span class="currency">₽</span>
+                            <span class="amount">150</span>
+                            <span class="period">/час</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">✓ Доступ к ПК</li>
+                        <li class="included">✓ Игры из библиотеки</li>
+                        <li class="included">✓ Интернет 1 Gbps</li>
+                        <li class="excluded">✗ VIP зона</li>
+                        <li class="excluded">✗ Персональный тренер</li>
+                    </ul>
+                    <button class="cta-button pricing-cta">Выбрать</button>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="pricing-header">
+                        <h3>Про</h3>
+                        <div class="price">
+                            <span class="currency">₽</span>
+                            <span class="amount">200</span>
+                            <span class="period">/час</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">✓ Всё из базового</li>
+                        <li class="included">✓ VIP зона</li>
+                        <li class="included">✓ Улучшенное железо</li>
+                        <li class="included">✓ Скидка на еду 10%</li>
+                        <li class="excluded">✗ Персональный тренер</li>
+                    </ul>
+                    <button class="cta-button pricing-cta primary">Выбрать</button>
+                </div>
+
+                <div class="pricing-card premium">
+                    <div class="pricing-header">
+                        <h3>Премиум</h3>
+                        <div class="price">
+                            <span class="currency">₽</span>
+                            <span class="amount">300</span>
+                            <span class="period">/час</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">✓ Всё из про</li>
+                        <li class="included">✓ Топовое железо RTX 4080</li>
+                        <li class="included">✓ Персональный тренер</li>
+                        <li class="included">✓ Скидка на еду 20%</li>
+                        <li class="included">✓ Приоритет в турнирах</li>
+                    </ul>
+                    <button class="cta-button pricing-cta">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Наше оборудование</h2>
+            <p class="section-subtitle">Загляни внутрь нашей киберарены</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/vip_pc.webp" alt="VIP зона" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>VIP зона</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets\L.webp" alt="Игровая зона" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Игровая зона</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/lg_48148b64-77a4-43ab-9e14-16c0b5733568-1.webp" alt="Турнирная зона" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Турнирная зона</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets\48d13d2f27e26beffbaf17f34e57d5c7.jpg" alt="Зона отдыха" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Зона отдыха</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets\a6102e9782229dbf92e34d1309c4de6d.jpg" alt="Бар" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Бар</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/c5d426bf7333f49b6493ac8e2097692f.jpg" alt="Наша гарнитура" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Наша гарнитура</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и бронирование -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Забронируй место</h2>
+            <p class="section-subtitle">Оставь заявку и мы свяжемся с тобой</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>г. Москва, ул. Геймерская, 42</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Режим работы</h4>
+                            <p>Круглосуточно, без выходных</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@cyberarena.ru</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Выберите тариф</option>
+                            <option value="basic">Базовый - 150₽/час</option>
+                            <option value="pro">Про - 200₽/час</option>
+                            <option value="premium">Премиум - 300₽/час</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="datetime-local" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Дополнительные пожелания" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary full-width">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">CYBER<span class="accent">ARENA</span></div>
+                <div class="footer-social">
+                    <a href="https://vk.ru/" class="social-link" target="_blank">VK</a>
+                    <a href="https://t.me/ratmikkk" class="social-link" target="_blank">TG</a>
+                    <a href="https://www.youtube.com" class="social-link" target="_blank">YT</a>
+                </div>
+                <div class="footer-copy">
+                    © 2024 Cyber Arena. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
