@@ -1039,7 +1039,7 @@ section {
 
 /* Адаптивность - Mobile First */
 /* Базовые стили для мобильных (320px+) */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     /* Предотвращение горизонтального скролла */
     html, body {
         overflow-x: hidden;
@@ -1054,34 +1054,44 @@ section {
     
     /* Навигация */
     .navbar {
-        padding: 12px 0;
+        padding: 8px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: var(--dark-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
     
     .navbar .container {
-        flex-direction: column;
-        gap: 12px;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: 8px;
     }
     
+    .nav-links {
+        display: none;
+    }
+    
     .nav-links a {
-        font-size: 11px;
-        padding: 6px 0;
-        letter-spacing: 1px;
+        font-size: 12px;
+        padding: 8px 0;
+        letter-spacing: 0.5px;
+    }
+    
+    .nav-links a.active {
+        color: var(--primary-color);
     }
     
     .logo {
-        font-size: 20px;
-        letter-spacing: 2px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
     }
     
     /* Hero секция */
     .hero {
-        padding-top: 80px;
+        padding-top: 100px;
         min-height: auto;
     }
     
@@ -1291,8 +1301,8 @@ section {
     }
 }
 
-/* Для средних телефонов (480px+) */
-@media (min-width: 481px) and (max-width: 768px) {
+/* Для средних телефонов (481px+) */
+@media (min-width: 481px) and (max-width: 1100px) {
     .container {
         padding: 0 24px;
     }
@@ -1319,8 +1329,8 @@ section {
     }
 }
 
-/* Для планшетов (769px-1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Для планшетов (1101px-1024px) */
+@media (min-width: 1101px) and (max-width: 1024px) {
     .hero-title {
         font-size: 56px;
     }
@@ -1343,8 +1353,11 @@ section {
 }
 
 /* Для больших экранов (1025px+) */
-@media (min-width: 1025px) {
+@media (min-width: 1101px) {
     /* Desktop стили остаются без изменений */
+    .nav-links {
+        display: flex !important;
+    }
 }
 
 /* Анимации при скролле */

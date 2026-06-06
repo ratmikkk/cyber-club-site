@@ -12,6 +12,48 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Показ активной секции в мобильной навигации
+function updateMobileNavActive() {
+    const sections = document.querySelectorAll('section');
+    const navLinksItems = document.querySelectorAll('.nav-links a');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop - 100) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+    
+    navLinksItems.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+        }
+    });
+    
+    // На мобильных показываем только активную ссылку
+    if (window.innerWidth <= 1100) {
+        navLinksItems.forEach(link => {
+            if (!link.classList.contains('active')) {
+                link.style.display = 'none';
+            } else {
+                link.style.display = 'block';
+            }
+        });
+    } else {
+        navLinksItems.forEach(link => {
+            link.style.display = 'block';
+        });
+    }
+}
+
+window.addEventListener('scroll', updateMobileNavActive);
+window.addEventListener('resize', updateMobileNavActive);
+updateMobileNavActive();
+
 // Анимация появления hero секции при загрузке страницы
 window.addEventListener('load', function() {
     const heroTitle = document.querySelector('.hero-title');
