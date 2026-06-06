@@ -1037,8 +1037,290 @@ section {
     font-weight: 400;
 }
 
-/* Адаптивность */
-@media (max-width: 1024px) {
+/* Адаптивность - Mobile First */
+/* Базовые стили для мобильных (320px+) */
+@media (max-width: 768px) {
+    /* Предотвращение горизонтального скролла */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Контейнер */
+    .container {
+        padding: 0 16px;
+        max-width: 100%;
+    }
+    
+    /* Навигация */
+    .navbar {
+        padding: 12px 0;
+    }
+    
+    .navbar .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .nav-links a {
+        font-size: 11px;
+        padding: 6px 0;
+        letter-spacing: 1px;
+    }
+    
+    .logo {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    /* Hero секция */
+    .hero {
+        padding-top: 80px;
+        min-height: auto;
+    }
+    
+    .hero-content {
+        padding: 0 8px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 32px;
+        line-height: 1.5;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 24px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        min-height: 48px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .stat-number {
+        font-size: 36px;
+    }
+    
+    .stat-label {
+        font-size: 11px;
+    }
+    
+    /* Секции */
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        line-height: 1.2;
+    }
+    
+    .section-subtitle {
+        font-size: 13px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+    
+    /* Карточки */
+    .features-grid,
+    .pricing-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .feature-card,
+    .pricing-card {
+        padding: 28px 20px;
+    }
+    
+    .feature-icon {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+    
+    .feature-card h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        letter-spacing: 1.5px;
+    }
+    
+    .feature-card p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    /* Тарифы */
+    .pricing-header h3 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        letter-spacing: 1.5px;
+    }
+    
+    .price {
+        font-size: 38px;
+    }
+    
+    .price .currency {
+        font-size: 20px;
+    }
+    
+    .pricing-features li {
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    
+    .popular-badge {
+        top: -18px;
+        padding: 6px 20px;
+        font-size: 9px;
+    }
+    
+    /* Галерея */
+    .gallery-item {
+        border-radius: 12px;
+        aspect-ratio: 4/3;
+    }
+    
+    .gallery-overlay {
+        padding: 20px;
+    }
+    
+    .gallery-overlay span {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+    
+    /* Контакты */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .contact-item {
+        gap: 12px;
+    }
+    
+    .contact-icon {
+        font-size: 24px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .contact-item h4 {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+    
+    .contact-item p {
+        font-size: 13px;
+    }
+    
+    .booking-form {
+        padding: 28px 20px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 13px;
+        min-height: 48px;
+    }
+    
+    /* Футер */
+    .footer {
+        padding: 32px 0;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .footer-social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .social-link {
+        padding: 10px 16px;
+        font-size: 11px;
+        min-height: 40px;
+    }
+    
+    .footer-copy {
+        font-size: 11px;
+    }
+}
+
+/* Для средних телефонов (480px+) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
+    
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .cta-button {
+        max-width: 300px;
+    }
+    
+    .feature-card,
+    .pricing-card {
+        padding: 32px 24px;
+    }
+}
+
+/* Для планшетов (769px-1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
     .hero-title {
         font-size: 56px;
     }
@@ -1050,114 +1332,19 @@ section {
     .section-title {
         font-size: 42px;
     }
-}
-
-@media (max-width: 768px) {
-    .navbar .container {
-        flex-direction: column;
-        gap: 16px;
+    
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .logo {
-        font-size: 22px;
-        letter-spacing: 3px;
-    }
-
-    .hero-title {
-        font-size: 42px;
-        letter-spacing: 2px;
-    }
-
-    .hero-subtitle {
-        font-size: 15px;
-        letter-spacing: 1.5px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .hero-stats {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .stat-number {
-        font-size: 42px;
-    }
-
-    .section-title {
-        font-size: 36px;
-        letter-spacing: 2px;
-    }
-
-    .section-subtitle {
-        font-size: 14px;
-    }
-
-    .features-grid,
-    .pricing-grid,
+    
     .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 24px;
-        text-align: center;
-    }
-
-    .footer-social {
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 20px;
-    }
-
-    .hero-title {
-        font-size: 32px;
-        letter-spacing: 1px;
-    }
-
-    .hero-subtitle {
-        font-size: 13px;
-    }
-
-    .section-title {
-        font-size: 28px;
-        letter-spacing: 1px;
-    }
-
-    .cta-button {
-        padding: 12px 28px;
-        font-size: 11px;
-    }
-
-    .feature-card,
-    .pricing-card {
-        padding: 32px 24px;
-    }
-
-    .booking-form {
-        padding: 32px 24px;
-    }
+/* Для больших экранов (1025px+) */
+@media (min-width: 1025px) {
+    /* Desktop стили остаются без изменений */
 }
 
 /* Анимации при скролле */
